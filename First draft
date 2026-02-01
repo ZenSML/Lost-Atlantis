@@ -3,81 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Website</title>
+    <title>My Clothing Store</title>
     <style>
-        /* This is the CSS - It makes things look pretty */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f9;
-        }
-
-        header {
-            background: #2c3e50;
-            color: #fff;
-            padding: 2rem;
+        body { font-family: 'Helvetica', sans-serif; margin: 0; background: #f9f9f9; }
+        header { background: #000; color: #fff; padding: 20px; text-align: center; }
+        
+        .shop-container { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+        
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 15px;
+            width: 250px;
             text-align: center;
+            border-radius: 10px;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        h1 { margin-top: 0; }
-
-        .btn {
-            display: inline-block;
-            background: #3498db;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: #eee; /* Placeholder for your image */
             border-radius: 5px;
-            transition: background 0.3s ease;
+            margin-bottom: 10px;
         }
 
-        .btn:hover {
-            background: #2980b9;
-        }
+        .price { color: #2ecc71; font-weight: bold; font-size: 1.2rem; }
 
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: #777;
+        .buy-btn {
+            display: block;
+            background: #000;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My New Website</h1>
-        <p>Built with help from Gemini</p>
-    </header>
+<header>
+    <h1>MY CLOTHING BRAND</h1>
+    <p>Shop the Latest Collection</p>
+</header>
 
-    <div class="container">
-        <h2>About This Project</h2>
-        <p>This is my very first website. I'm currently working with my AI collaborator to build something amazing from the ground up.</p>
-        
-        <h3>What's Next?</h3>
-        <ul>
-            <li>Adding a gallery of my favorite things</li>
-            <li>Creating a contact form</li>
-            <li>Changing the colors to fit my style</li>
-        </ul>
-
-        <a href="#" class="btn">Click This Button!</a>
+<div class="shop-container">
+    <div class="product-card">
+        <div class="product-image">👕</div> <h3>Vintage Tee</h3>
+        <p class="price">$25.00</p>
+        <a href="YOUR_PAYMENT_LINK_HERE" class="buy-btn">BUY NOW</a>
     </div>
 
-    <footer>
-        <p>&copy; 2026 My Website Project</p>
-    </footer>
+    <div class="product-card">
+        <div class="product-image">🧥</div>
+        <h3>Hoodie</h3>
+        <p class="price">$45.00</p>
+        <a href="YOUR_PAYMENT_LINK_HERE" class="buy-btn">BUY NOW</a>
+    </div>
+</div>
 
 </body>
 </html>

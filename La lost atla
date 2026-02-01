@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lost Atlantis — ZenSML</title>
+
+  <!-- Tailwind Play CDN (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <meta name="description" content="Lost Atlantis — project by ZenSML" />
+  <link rel="icon" href="assets/logo.svg" />
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="bg-white/80 backdrop-blur sticky top-0 z-30 shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="assets/logo.svg" alt="Lost Atlantis logo" class="h-10 w-10" />
+        <div>
+          <h1 class="text-lg font-semibold">Lost Atlantis</h1>
+          <p class="text-xs text-slate-500 -mt-1">by ZenSML</p>
+        </div>
+      </a>
+      <nav class="flex items-center gap-4">
+        <a class="text-sm text-slate-600 hover:text-slate-900" href="#features">Features</a>
+        <a class="text-sm text-slate-600 hover:text-slate-900" href="docs/getting-started.md">Docs</a>
+        <a class="text-sm text-slate-600 hover:text-slate-900" href="#contact">Contact</a>
+        <a class="inline-block bg-sky-600 text-white text-sm px-3 py-2 rounded-md hover:bg-sky-700" href="https://github.com/ZenSML/Lost-Atlantis" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <!-- Hero -->
+    <section class="grid gap-8 md:grid-cols-2 items-center">
+      <div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight">Lost Atlantis</h2>
+        <p class="mt-4 text-lg text-slate-600">A short tagline or one-line description. Replace this with your project's mission, what it does, or who it's for.</p>
+        <div class="mt-6 flex gap-3">
+          <a class="inline-flex items-center gap-2 bg-sky-600 text-white px-4 py-2 rounded-md hover:bg-sky-700" href="docs/getting-started.md">Get started</a>
+          <a class="inline-flex items-center gap-2 border border-slate-200 px-4 py-2 rounded-md text-slate-700 hover:bg-slate-100" href="#features">Learn more</a>
+        </div>
+        <p class="mt-6 text-sm text-slate-500">Open-source • MIT (or your license)</p>
+      </div>
+
+      <div class="bg-gradient-to-br from-sky-50 to-white rounded-xl p-6 shadow-sm">
+        <img src="assets/hero-screenshot.png" alt="Project screenshot (placeholder)" class="w-full rounded-md border border-slate-100 object-cover" />
+        <p class="mt-3 text-sm text-slate-500">Screenshot / demo placeholder. Replace with a real screenshot or GIF in assets/.</p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="mt-16">
+      <h3 class="text-2xl font-semibold">Features</h3>
+      <div class="mt-6 grid gap-6 sm:grid-cols-2">
+        <div class="bg-white p-5 rounded-lg shadow-sm border">
+          <h4 class="font-medium">Feature One</h4>
+          <p class="mt-2 text-slate-600 text-sm">Brief description of the first feature and why it's useful.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow-sm border">
+          <h4 class="font-medium">Feature Two</h4>
+          <p class="mt-2 text-slate-600 text-sm">Brief description of the second feature and how it helps users.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow-sm border">
+          <h4 class="font-medium">Easy to Use</h4>
+          <p class="mt-2 text-slate-600 text-sm">Explain how to get started quickly—install, run, or demo.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow-sm border">
+          <h4 class="font-medium">Extensible</h4>
+          <p class="mt-2 text-slate-600 text-sm">Highlight customization, integrations or plugin architecture if applicable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick start -->
+    <section class="mt-12 bg-white p-6 rounded-lg border shadow-sm">
+      <h3 class="text-xl font-semibold">Quick start</h3>
+      <p class="mt-3 text-slate-600">Clone and open the repository locally:</p>
+      <pre class="mt-3 bg-slate-100 p-3 rounded text-sm overflow-x-auto"><code>git clone https://github.com/ZenSML/Lost-Atlantis.git
+cd Lost-Atlantis
+# Open index.html in your browser or serve a local static server</code></pre>
+      <p class="mt-3 text-sm text-slate-500">See the full docs for installation and examples: <a class="text-sky-600" href="docs/getting-started.md">Getting Started</a></p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-12">
+      <h3 class="text-xl font-semibold">Contact & Links</h3>
+      <ul class="mt-4 space-y-2 text-slate-700">
+        <li>Repo: <a class="text-sky-600" href="https://github.com/ZenSML/Lost-Atlantis" target="_blank" rel="noopener">github.com/ZenSML/Lost-Atlantis</a></li>
+        <li>Email: <span class="text-slate-500">you@example.com</span> (replace)</li>
+      </ul>
+    </section>
+
+    <footer class="mt-16 py-8 text-center text-sm text-slate-500">
+      © <span id="year"></span> ZenSML • Built with HTML + Tailwind
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
